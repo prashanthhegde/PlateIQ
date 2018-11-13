@@ -1,0 +1,10 @@
+Browser=Chrome
+
+######################################
+#		choose from below options    #
+#		1.IE						 #
+#		2.Chrome					 #
+#		3.Firefox					 #
+#		4.PhantomJS					 #
+#		5.SauceLabs					 #
+######################################

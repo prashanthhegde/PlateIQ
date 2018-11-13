@@ -1,0 +1,178 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3644053294,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser(Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Test opening an invoice and marking as exported",
+        "description": "",
+        "id": "test-opening-an-invoice-and-marking-as-exported;test-opening-an-invoice-and-marking-as-exported;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1272684479,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowserAndEmbedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 28500209239,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I launch the PlateIQ application",
+            "match": {
+              "location": "HomePage.i_launch_the_plateiq_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3901210228,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Login inside application",
+            "match": {
+              "location": "HomePage.login(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "prashanth-test@test.plateiq.com",
+                  "piqtest123"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19770998669,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I verify the text as \"Welcome to Plate IQ, Prashanth.\" in login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome to Plate IQ, Prashanth.",
+                  "offset": 22
+                }
+              ],
+              "location": "HomePage.i_verify_the_text_as_in_loginpage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4556301176,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on the invoices button",
+            "match": {
+              "location": "Invoices.click_on_the_invoices_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 629229277,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify the invoices Needs Attention,Pending Export,Other Documents,All Documents",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Needs Attention,Pending Export,Other Documents,All Documents",
+                  "offset": 20
+                }
+              ],
+              "location": "Invoices.validateTabs(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1177961457,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on first links in needs attention",
+            "match": {
+              "location": "Invoices.validation_first_link_needs_attention()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3478784276,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verify if link is opened and More dropdown exists",
+            "match": {
+              "location": "Invoices.verfiylink()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2611222120,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User clicks on mark as exported and validate exported text",
+            "match": {
+              "location": "Invoices.exportandverify()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Invoicescenario"
+          },
+          {
+            "name": "@Invoicescenario"
+          }
+        ]
+      }
+    ],
+    "name": "Test opening an invoice and marking as exported",
+    "description": "",
+    "id": "test-opening-an-invoice-and-marking-as-exported",
+    "keyword": "Feature",
+    "uri": "resources/Features/Invoice.feature",
+    "tags": [
+      {
+        "name": "@Invoicescenario",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
